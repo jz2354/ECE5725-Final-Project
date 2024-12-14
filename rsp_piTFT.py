@@ -1,3 +1,10 @@
+# -------------------------------------------------------
+# Final Project
+# Name(NetID): Anzhou Li(al2627), Jiaying Zhang(jz2354)
+# Date: December 14, 2024
+# Project Name: Gesture RSP Game
+# -------------------------------------------------------
+
 import math
 import os
 import subprocess
@@ -136,8 +143,9 @@ pwm2 = GPIO.PWM(RIGHT_VIBRATOR_PIN, 100)  # f = 100Hz
 pwm2.start(0)  # Duty cycle = 0
 
 # ----------------------------------------
-# Set up GPIO 
+# Functions
 # ----------------------------------------
+
 # Draw the main page
 def draw_main_page():
     screen.blit(background1, (0, 0))
@@ -332,7 +340,10 @@ def rsp_result(users):
     else:
         return None
     
-    
+# ----------------------------------------
+# Main
+# ----------------------------------------
+
 def main():
     global background
     global frame1
